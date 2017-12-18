@@ -15,7 +15,7 @@ def hello():
 if __name__ == "__main__":
 	port = os.environ.get("PORT")
 	if port:
-		app.run(port=port)
+		app.run(port=int(port))
 		#app.run(host="0.0.0.0",port=port)
 	else:
 		app.run()
