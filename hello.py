@@ -14,10 +14,10 @@ def hello():
 
 if __name__ == "__main__":
 	#port = os.environ.get("PORT","33507")
-	#port = os.environ.get("PORT","5000")
+	port = os.environ.get("PORT","5000")
 	#app.run(port=int(port))
 	#app.run(port=9999)
-	app.run(host="0.0.0.0")
+	app.run(host="0.0.0.0",port=int(port))
 """
 	port = os.environ.get("PORT")
 	if port:
