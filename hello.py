@@ -13,7 +13,8 @@ def hello():
 	return name
 
 if __name__ == "__main__":
-	app.run()
+	port = os.environ.get("PORT","5000")
+	app.run(port=int(port))
 """
 	port = os.environ.get("PORT")
 	if port:
