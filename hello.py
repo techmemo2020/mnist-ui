@@ -17,7 +17,7 @@ if __name__ == "__main__":
 	#port = os.environ.get("PORT","5000")
 	#app.run(port=int(port))
 	#app.run(port=9999)
-	app.run()
+	app.run(host="0.0.0.0")
 """
 	port = os.environ.get("PORT")
 	if port:
