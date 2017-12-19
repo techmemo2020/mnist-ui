@@ -2,6 +2,7 @@
 
 from flask import render_template, request
 import base64
+import time
 import svm
 
 ddir = 'static/data'
@@ -16,8 +17,9 @@ def _resolve_image():
 		file = open(fn,'w')
 		file.write(img_bin)
 		file.close()
+		fn_nocache = "%s?t=%f"%(fn,time.time())
 	res = svm.predict(fn)
-	return render_template('draw/output.html',img_fn=fn,res=res)
+	return render_template('draw/output.html',img_fn=fn_nochache,res=res)
 		
 
 def disp():
