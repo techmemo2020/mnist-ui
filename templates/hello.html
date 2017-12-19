@@ -1,0 +1,9 @@
+{% extends "layout.html" %}
+{% set title="Hello from Flask" %}
+{% block content %}
+{% if name %}
+  <h1>{{ name }}さん！テンプレートからのHello Worldだよ！</h1>
+{% else %}
+  <h1>テンプレートからのHello Worldだよ！</h1>
+{% endif %}
+{% endblock %}
