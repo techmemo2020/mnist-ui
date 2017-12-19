@@ -11,5 +11,9 @@ name = "pypi"
 
 [packages]
 
-flask = "*"
+Flask = "*"
 gunicorn = "*"
+Pillow = "*"
+numpy = "*"
+scikit-learn = "*"
+scipy = "*"

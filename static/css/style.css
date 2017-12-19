@@ -5,10 +5,12 @@ body , html {
 }
 
 div#header {
+	/*
 	position: fixed;
 	width: 100%;
 	top: 0px;
 	left: 0px;
+	*/
 	text-align: center;
 	padding: 10px;
 	background-color: lightskyblue;
@@ -16,15 +18,16 @@ div#header {
 
 div#content {
 	text-align: center;
-	padding: 150px 20px 150px 20px;
+	padding: 20px;
 }
 
 div#footer {
-	position: fixed;
+	/* position: fixed;
 	bottom: 0;
 	width: 100%;
+	left: 0px;
+	*/
 	text-align: center;
 	padding: 10px;
-	left: 0px;
 	background-color: lightskyblue;
 }
