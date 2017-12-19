@@ -19,7 +19,7 @@ def _resolve_image():
 		file.close()
 		fn_nocache = "%s?t=%f"%(fn,time.time())
 	res = svm.predict(fn)
-	return render_template('draw/output.html',img_fn=fn_nochache,res=res)
+	return render_template('draw/output.html',img_fn=fn_nocache,res=res)
 		
 
 def disp():
