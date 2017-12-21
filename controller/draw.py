@@ -3,7 +3,7 @@
 from flask import render_template, request
 import base64
 import time
-import svm
+import controller.svm as svm
 
 ddir = 'static/data'
 
